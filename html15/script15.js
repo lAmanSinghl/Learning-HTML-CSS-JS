@@ -1,0 +1,12 @@
+console.log(document.querySelector(".box").dataset);
+let div1=document.createElement("div");
+div1.innerHTML="I have been inserted <b>by Aman singh</b>";
+div1.setAttribute("class","created");
+// document.querySelector(".container").append(div);
+document.querySelector(".container").prepend(div1);
+let cont=document.querySelector(".container");
+cont.insertAdjacentHTML("afterend","<b>hello, Welcome to my World :End</b>");
+cont.insertAdjacentHTML("beforebegin","<b>hello, Welcome to my World :Start</b>");
+document.querySelector(".box").remove();
+console.log(document.querySelector(".container").classList);
+console.log(document.querySelector(".container").className);

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    justify-items: center ;
+}
+.container{
+    background-color: rgb(37, 36, 36);
+    width: 80vw;
+    height:80vh;
+}
+.box{
+    background-color: rgb(110, 107, 126);
+    width: 10vw;
+    height:10vh;
+    transition-property:all;
+    transition-duration:1s;
+    transition-timing-function:ease-in-out;
+    transition-delay:0s;
+    /* border: solid white; */
+    
+}
+.transform{
+    transform: translate(60vw,60vh) scale(2);
+    background-color: rgb(255, 255, 255);
+}

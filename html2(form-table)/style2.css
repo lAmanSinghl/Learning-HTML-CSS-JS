@@ -1,0 +1,15 @@
+#div1{
+    background-color: rgb(209, 119, 17);
+}
+#div3{
+    background-color: rgb(72, 223, 67);
+}
+.txt{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}td{
+    border: 2px solid black ;
+    
+}th{
+    border: 2px solid black ;
+    
+}

@@ -1,0 +1,18 @@
+body{
+    background-color: aqua;
+    font-family:Arial,sans-serif;
+}
+h1{
+color:white ;
+text-align: center;
+}
+p{
+color: darkgray;
+text-align: center;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}

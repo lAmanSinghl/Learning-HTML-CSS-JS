@@ -1,0 +1,48 @@
+html{
+    font-size: 12px;
+}
+.a1{
+    box-sizing: border-box;
+border: 10px solid black;
+width: 100vw;
+background-color: blue;
+
+}
+.a2{
+    box-sizing: border-box;
+border: 10px solid black;
+width: 80vw;
+height: 10vh;
+background-color: blue;
+margin: 10px auto;
+}.a3{
+    box-sizing: border-box;
+border: 10px solid black;
+width: 80vw;
+font-size: 12px;
+background-color: blue;
+margin: 10px auto;
+}.a3 p{
+    font-size: 2em;
+}
+#a12{
+    font-size: 2rem;
+}
+.a4{
+    box-sizing: border-box;
+border: 10px solid black;
+width: 80vw;
+
+background-color: blue;
+margin: 10px auto;
+}.a5{
+    box-sizing: border-box;
+border: 10px solid black;
+width: 80vw;
+background-color: blue;
+margin: 10px auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,12 @@
+div > p{
+    /* direct child */
+ background-color: blue;
+ color: white;
+}
+p:first-child{
+    color:red;
+    background-color: yellow;
+}p:nth-child(3){
+    color:red;
+    background-color: yellow;
+}

@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    
+    
+}
+
+.container{
+ display:flex;
+ flex-wrap: wrap;
+ width: 720px;
+ height: 95vh;
+ justify-self: center;
+}
+.box{
+  width:120px;
+  height: 90px;
+  margin: 20px;
+  background-color:rgba(0, 255, 255, 0.247);
+  perspective: 800px;
+}
+.box:hover{
+    background-color: rgba(0, 255, 255, 0.247);
+}
+.All{
+    background-color: rgba(4, 68, 68, 0.247);
+    width:120px;
+    height: 90px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-weight:600;
+    transition:transform 1s ease, background-color 0.4s;
+}
+#Asx:hover .scaleX{
+    transform:scaleX(1.8)
+}#Asy:hover .scaleY{
+    transform: scaleY(1.8);
+}#As:hover .scale{
+    transform: scale(1.8);
+}#Atx:hover .translateX{
+    transform:translateX(50px);
+}#Aty:hover .translateY{
+    transform:translateY(50px);
+}#Atz:hover .translateZ{
+    transform:translateZ(200px);
+}#At:hover .translate{
+    transform:translate(50px,50px);
+}#Ar:hover .Rotate{
+    transform:rotate(45deg);
+}#Ar3d:hover .rotate3d{
+    transform:rotate3d(1,1,1,90deg);
+}#Am:hover .matrix{
+    transform:matrix(1.2,0.2,0.2,1.2,10,10 );
+/* 
+a	    Horizontal scaling (X)	Scale in X direction
+b	    Skew Y	                Skew along Y axis
+c	    Skew X	                Skew along X axis
+d	    Vertical scaling (Y)	Scale in Y direction
+e	    Translate X	            Move horizontally
+f	    Translate Y	            Move vertically 
+*/
+}#Askx:hover .skewX{
+    transform:skewX(25deg);
+}#Asky:hover .skewY{
+    transform:skewY(25deg);
+}#Ask:hover .skew{
+    transform:skew(25deg,25deg);
+}
+#Am3d:hover .matrix3D {
+    transform: matrix3d(
+        1, 0, 0, 0,
+        0, 1, 0, 0,
+        0, 0, 1, 0.001,
+        50, 50, 100, 1
+    );
+    /* 
+    | Parameter | Matrix Element | Role                               |
+| --------- | -------------- | ---------------------------------- |
+| a1 1       | m1             | Scale X, X-axis basis vector       |
+| a2 0       | m2             | Skew Y                             |
+| a3 0       | m3             | Skew Z                             |
+| a4 0       | m4             | Perspective                        |
+| a5 1       | m5             | Skew X                             |
+| a6 0       | m6             | Scale Y, Y-axis basis vector       |
+| a7 0       | m7             | Skew Z                             |
+| a8 0       | m8             | Perspective                        |
+| a9 0       | m9             | Skew X                             |
+| a10 0      | m10            | Skew Y                             |
+| a11 1      | m11            | Scale Z, Z-axis basis vector       |
+| a12 0.001  | m12            | Perspective                        |
+| a13 50     | m13            | Translate X                        |
+| a14 50     | m14            | Translate Y                        |
+| a15 100    | m15            | Translate Z                        |
+| a16 1      | m16            | Usually 1 (homogeneous coordinate) |
+
+    */
+}
+#At3d:hover .translate3D{
+    transform:translate3d(40px,40px,250px);
+}#Arx:hover .rotateX{
+    transform:rotateX(45deg);
+}#Ary:hover .rotateY{
+    transform:rotateY(45deg);
+}
+/* i have used child selector here
+   changes happen in the child 
+   when the parent which i have used id for
+   is hovered over */
+/* 
+  the transform wont go away when you hover on 
+  the child as the child is inside the parent
+  and it is considered you are hovering on the 
+  parent */

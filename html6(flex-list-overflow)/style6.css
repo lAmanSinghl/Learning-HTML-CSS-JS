@@ -1,0 +1,33 @@
+nav ul li {
+    /* list-style-type:square;
+    background-color: bisque;
+    list-style-position: inside;
+    border: 2px solid black;
+    list-style: disc inside; */
+    /* padding: 80px; */
+    
+   text-align: center;
+   
+}  
+*{
+    margin: 0;
+    padding: 0;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    height: 100px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+.box{
+    width: 20vw;
+    height: 10vh;
+    border: 2px solid black;
+    overflow: hidden scroll;
+    /* white-space:nowrap; */
+    /* text-overflow:ellipsis; */
+}

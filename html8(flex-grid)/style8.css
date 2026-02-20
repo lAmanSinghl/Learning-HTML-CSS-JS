@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.container-flex {
+    border: 2px solid black;
+    display: flex;
+    /* align-items: flex-end; */
+    height: 49vh;
+    /* justify-content: flex-end; */
+    /* flex-wrap: wrap; */
+    /* align-content: flex-end; */
+    column-gap: 10px;
+}
+
+.item-flex {
+    border: 3px solid rgb(128, 104, 128);
+    background-color: purple;
+    width: 25px;
+    height: 25px;
+    /* margin: 2px; */
+    text-align: center;
+    color: aliceblue;
+    /* flex-grow: 1; */
+    flex-grow: 1;
+}
+
+.order-1 {
+    order: 1;
+    flex-grow: 2;
+    align-self: flex-end;
+}
+
+.order-2 {
+    order: 100;
+}
+
+.container-grid {
+    display: grid;
+    border: 2px solid black;
+    height: 49.908vh;
+    /* grid-template-columns: 100px 200px 100px;
+    grid-template-rows: 200px*6; */
+    /* grid-template-areas:"nav nav nav nav"
+                        "side side article article"
+                        "foot foot foot foot" */
+    grid-template-columns: repeat(4,60px);
+    /* column-gap: 100px;
+    grid-template-rows: repeat(2,10px); */
+    /* align-content: center;
+    justify-content: center;  this is for alinging with respect to container*/
+    align-items: center;
+    justify-items: center;
+    /*this is for cell*/
+}
+
+.item-grid {
+    border: 3px solid rgb(128, 104, 128);
+    background-color: purple;
+    width: 25px;
+    height: 25px;
+    
+}
+/* .two{
+    grid-area: side;
+    background-color: aqua;
+}.three{
+    grid-area: article;
+    background-color: rgb(88, 88, 114);
+}.four{
+    grid-area: foot;
+    background-color: rgb(6, 6, 77);
+}
+.five{
+    grid-area: nav;
+    background-color: antiquewhite;
+}.one{
+    grid-area: nav;
+    background-color: blue;
+} */
